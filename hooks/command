@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -xuo pipefail
 
 RESOLVED_HEAD=$(git -C $BUILDKITE_BUILD_CHECKOUT_PATH rev-parse HEAD)
 RESOLVED_BUILDKITE_COMMIT=$(git -C $BUILDKITE_BUILD_CHECKOUT_PATH rev-parse $BUILDKITE_COMMIT)

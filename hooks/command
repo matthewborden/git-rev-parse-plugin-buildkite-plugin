@@ -11,7 +11,7 @@ RESOLVED_HEAD_STRICT=$(git -C $BUILDKITE_BUILD_CHECKOUT_PATH rev-parse --verify 
 echo "Parsed the current HEAD with --verify $RESOLVED_HEAD_STRICT"
 
 RESOLVED_BUILDKITE_COMMIT_STRICT=$(git -C $BUILDKITE_BUILD_CHECKOUT_PATH rev-parse --verify $BUILDKITE_COMMIT)
-echo "Parsed the current HEAD with --verify $RESOLVED_BUILDKITE_COMMIT_STRICT"
+echo "Parsed the current BUILDKITE_COMMIT with --verify $RESOLVED_BUILDKITE_COMMIT_STRICT"
 
 TOP_LEVEL_PATH=$(git -C $BUILDKITE_BUILD_CHECKOUT_PATH rev-parse --show-toplevel)
 echo "Top level path: $TOP_LEVEL_PATH"

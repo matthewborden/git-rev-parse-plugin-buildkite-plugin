@@ -1,0 +1,8 @@
+name: Resolve the commit sha of the checked out commit
+description: Runs git rev-parse in the checked out directory
+author: https://github.com/matthewborden
+requirements: []
+configuration:
+  properties:
+    pattern: {}
+  additionalProperties: false
